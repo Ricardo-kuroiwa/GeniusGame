@@ -1,0 +1,146 @@
+:root{
+  --bg-blue-600:#282e3a;
+  --bg-green-600:#10732a;
+  --bg-red-600:#b80b0b;
+  --bg-yellow-600:#ded118;
+  --bg-blue-500:#3b2bb3;
+  --bg-white-100:#f0fff4;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font: 400 1rem 'Poppins', sans-serif;
+}
+/*1 rem =16px*/
+.container{
+  height: 100vh;
+  width: 100vw;
+  padding:0.625rem ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.clickable {
+  height: 15rem;
+  width: 15rem;
+  opacity: 0.25;
+  transition: 0.75s;
+}
+.game{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 1rem auto;
+  padding: 1.5rem 0.5rem 0.75rem;
+  position: relative;
+
+  height: 40vw;
+  width: 40vw;
+
+  border-radius: 999px;
+  background-color: var(--bg-blue-600);
+}
+.top-left{
+  border-radius: 100% 5px 5px 5px;
+}
+.top-right{
+  border-radius: 5px 100% 5px 5px;
+}
+.bottom-left{
+  border-radius: 5px 5px 5px 100%;
+}
+.bottom-right{
+  border-radius: 5px 5px 100% 5px
+}
+.control-container {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  position: absolute;
+  /* border: #282e3a solid 0.75rem; */
+}
+.perfect-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control {
+  background-color: var(--bg-blue-600);
+  border-radius: 100px;
+  cursor: pointer;
+  height: 10rem;
+  width: 10rem;
+  margin: 0.75rem ;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.control .background {
+  background-color:var(--bg-white-100);
+  border-radius: 100px;
+  height: 80%;
+  pointer-events: initial;
+  position: absolute;
+  width: 80%;
+  margin: 12px 0;
+}
+
+.control p {
+  pointer-events: none;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.hover {
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 1;
+}
+/*HUD*/
+.hud{
+  width:30rem;
+  display: flex;
+  align-items: center;
+  border: #282e3a solid 4px;
+  justify-content: space-between;
+  padding: 0.75rem 0.5rem;
+
+}
+.hud div{
+  text-align: center;
+}
+.restart{
+  width: 7rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  color: var(--bg-white-100);
+  background-color: var(--bg-blue-600);
+}
+/*Colors*/
+#green{
+  background-color: var(--bg-green-600);
+}
+#red{
+  background-color: var(--bg-red-600);
+}
+#blue{
+  background-color: var(--bg-blue-500);
+}
+#yellow{
+  background-color: var(--bg-yellow-600);
+}

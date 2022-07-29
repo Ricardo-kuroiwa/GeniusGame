@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genius Game</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section class="game">
+      <div class="top-left clickable" id="red"></div>
+      <div class="top-right clickable" id="green"></div>
+      <div class="bottom-left clickable" id="blue"></div>
+      <div class="bottom-right clickable" id="yellow"></div>
+
+      <div class="control-container perfect-center">
+        <div class="control">
+          <div class="background">
+
+          </div>
+          <p>
+            Start
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="hud">
+      <div>
+        <p>Current Score</p>
+        <span id="currentScore">0</span>
+      </div>
+
+      <button class="restart">Restart game</button>
+
+
+      <div>
+        <p>Max Score</p>
+        <span id="maxScore">-</span>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
